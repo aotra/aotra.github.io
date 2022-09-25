@@ -1,0 +1,72 @@
+@font-face { font-family: oneUP; src: url('Fonts/1up.otf'); } 
+ @font-face { font-family: pixel; src: url('Fonts/Pixeled.otf'); } 
+body{
+    margin: 0;
+    background-color: white;
+}
+.resetBanner{
+    background-image: url("Images/bg1.png");
+}
+.resetBanner h1{
+    padding: 80px;
+    color: black;
+    font-family: oneUP;
+    font-size: 100px;
+    text-align: center;
+    transition: 4ms;
+
+
+    /*prevent highlighting*/
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.resetBanner h1:active{
+    transform: translate(4px, 4px);
+}
+
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+.links div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+.links a {
+    padding: 50px;
+    list-style: none;
+    overflow: hidden;
+    color: black;
+    font-family: pixel;
+    text-align: center;
+    padding: 25px;
+    font-size: 30px;
+    border-radius: 4px;
+    list-style: none;
+    display: inline-block;
+    transition: 0.3s;
+}
+.links img{
+    display: inline-block;
+    width: 80px;
+    padding-top: 15px;
+}
+.links a:hover {
+    text-shadow: 4px 4px rgb(66, 66, 66)
+}
+.links a:link { text-decoration: none; }
+.links a:visited { text-decoration: none; }
+.links a:hover { text-decoration: none; }
+.links a:active { text-decoration: none; }
+

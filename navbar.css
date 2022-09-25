@@ -1,0 +1,38 @@
+@font-face { font-family: oneUP; src: url('Fonts/1up.otf'); } 
+.navBar{
+    list-style: none;
+    overflow: hidden;
+    background-color: whitesmoke;
+    
+}
+.navBar img{
+    float: left;
+    padding: 10px 0px;
+    max-width: 100px;
+    display: inline-block;
+    border-radius: 6px;
+}
+.navBar a{
+    color: rgb(241, 101, 160);
+    float: left;
+    text-align: center;
+    padding: 25px;
+    font-size: 50px;
+    border-radius: 4px;
+    font-family: oneUP;
+    list-style: none;
+    margin-right: 60px;
+    margin-left: 40px;
+    display: inline-block;
+    transition: 0.3s;
+}
+.navBar a:hover {
+    background-color: rgb(224, 113, 174);
+    color: #ffffff;
+  }
+  
+  /* Add a color to the active/current link */
+.navBar a.active {
+    background-color: #085e3a;
+    color: rgb(0, 0, 0);
+}
