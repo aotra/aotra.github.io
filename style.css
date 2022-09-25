@@ -1,11 +1,16 @@
 @font-face { font-family: oneUP; src: url('Fonts/1up.otf'); } 
  @font-face { font-family: pixel; src: url('Fonts/Pixeled.otf'); } 
+
+* {
+    transition: 4ms;
+}
 body{
     margin: 0;
     background-color: white;
 }
 .resetBanner{
     background-image: url("Images/bg1.png");
+    position: relative;
 }
 .resetBanner h1{
     padding: 80px;
@@ -43,6 +48,11 @@ body{
     justify-content: center;
     transition: 0.3s;
 }
+#invertButton{
+    margin: 0px;
+    padding: 200px;
+}
+
 .links a {
     padding: 50px;
     list-style: none;
@@ -52,7 +62,7 @@ body{
     text-align: center;
     padding: 25px;
     font-size: 30px;
-    border-radius: 4px;
+    border-radius: 14px;
     list-style: none;
     display: inline-block;
     transition: 0.3s;
@@ -70,3 +80,75 @@ body{
 .links a:hover { text-decoration: none; }
 .links a:active { text-decoration: none; }
 
+
+
+.snow-container {
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    top: 0;
+    overflow: hidden;
+    z-index: 2;
+    pointer-events: none;
+    background-color: transparent;
+  }
+  
+  .snow {
+    display: block;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    pointer-events: none;
+    transform: translate3d(0, -100%, 0);
+    -webkit-animation: snow linear infinite;
+            animation: snow linear infinite;
+  }
+  .snow.foreground {
+    background-image: url("https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-large-075d267ecbc42e3564c8ed43516dd557.png");
+    -webkit-animation-duration: 15s;
+            animation-duration: 15s;
+  }
+  .snow.foreground.layered {
+    -webkit-animation-delay: 7.5s;
+            animation-delay: 7.5s;
+  }
+  .snow.middleground {
+    background-image: image-url("https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-medium-0b8a5e0732315b68e1f54185be7a1ad9.png");
+    -webkit-animation-duration: 20s;
+            animation-duration: 20s;
+  }
+  .snow.middleground.layered {
+    -webkit-animation-delay: 10s;
+            animation-delay: 10s;
+  }
+  .snow.background {
+    background-image: image-url("https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-small-1ecd03b1fce08c24e064ff8c0a72c519.png");
+    -webkit-animation-duration: 30s;
+            animation-duration: 30s;
+  }
+  .snow.background.layered {
+    -webkit-animation-delay: 15s;
+            animation-delay: 15s;
+  }
+  
+  @-webkit-keyframes snow {
+    0% {
+      transform: translate3d(0, -100%, 0);
+    }
+    100% {
+      transform: translate3d(15%, 100%, 0);
+    }
+  }
+  
+  @keyframes snow {
+    0% {
+      transform: translate3d(0, -100%, 0);
+    }
+    100% {
+      transform: translate3d(15%, 100%, 0);
+    }
+  }
