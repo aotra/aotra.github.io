@@ -8,11 +8,19 @@
 body{
     margin: 0;
     background-color: white;
+    overflow-x: hidden;
 }
 .resetBanner{
     background-image: url("Images/bg1.png");
     position: relative;
     height: 550px;
+}
+#aotraCont{
+    position: absolute;
+    height: 550px;
+    margin-left: 27%;
+    margin-right: 27%;
+    z-index: 2;
 }
 .resetBanner h1{
     padding: 0px;
@@ -52,9 +60,10 @@ body{
 }
 #invertButton{
     margin: 0px;
-    display: flexbox;
+    display: flex;
     align-items:center;
     padding: 200px;
+    text-align: center;
 }
 #invertButton:active{
     transform: translate(4px, 4px);

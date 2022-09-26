@@ -9,6 +9,7 @@
     <script src="JS/main.js"></script>
     <link rel="icon" type="image/x-icon" href="Icons/favicon_io/favicon.ico">
     <script src="JS/jquery-3.6.0.min.js"></script>
+    <script src="JS/snow.js"></script>
 </head>
 <body>
     <!-- <div class="snow-container2">
@@ -30,6 +31,10 @@
     <div class="resetBanner">
         <!-- <canvas id="canvas"> -->
             <!-- <img src="Images/axo.png" id="axo" style="top: 0;left: 0;"> -->
+            <div id="aotraCont">
+                <h1 id="invertButton" onclick="checkCB()">AOTRA</h1>
+            </div>
+            <canvas id="sky" width="100%" height="550px" position="absolute" z-index="5"></canvas>
             <div class="snow-container">
                 <div class="snow foreground"></div>
                 <div class="snow foreground layered"></div>
@@ -37,9 +42,6 @@
                 <div class="snow middleground layered"></div>
                 <div class="snow background"></div>
                 <div class="snow background layered"></div>
-            </div>
-            <div>
-                <h1 id="invertButton" onclick="checkCB()">AOTRA</h1>
             </div>
         <!-- </canvas> -->
         <script src="JS/canvas.js"></script>
