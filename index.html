@@ -24,7 +24,7 @@
         <div class="navBar">
             <!-- <img src="Icons/rose.png"> -->
             <a href="index.html">HOME</a>
-            <a href="index.html">ABOUT</a>
+            <!-- <a href="index.html">ABOUT</a> -->
         </div>
     </div>
     <div class="resetBanner">
@@ -38,7 +38,9 @@
                 <div class="snow background"></div>
                 <div class="snow background layered"></div>
             </div>
-            <h1 id="invertButton" onclick="invert()">AOTRA</h1>
+            <div>
+                <h1 id="invertButton" onclick="checkCB()">AOTRA</h1>
+            </div>
         <!-- </canvas> -->
         <script src="JS/canvas.js"></script>
     </div>
@@ -51,9 +53,9 @@
             <img src="Images/twitterIcon.png">
             <a href="https://twitter.com/AquacksMaybe" target="_blank">Twitter</a>
         </div>
-        <div class="Discord">
+        <div class="Discord"onclick="swapdstext()">
             <img src="Images/discordIcon.png">
-            <a id="dstext" onclick="swapdstext()">Discord</a>
+            <a id="dstext">Discord</a>
         </div>
     </div>
 </body>

@@ -3,6 +3,7 @@
 
 * {
     transition: 4ms;
+    -webkit-transition : -webkit-filter 200ms linear
 }
 body{
     margin: 0;
@@ -11,14 +12,16 @@ body{
 .resetBanner{
     background-image: url("Images/bg1.png");
     position: relative;
+    height: 550px;
 }
 .resetBanner h1{
-    padding: 80px;
+    padding: 0px;
     color: black;
     font-family: oneUP;
     font-size: 100px;
     text-align: center;
     transition: 4ms;
+    cursor: pointer;
 
 
     /*prevent highlighting*/
@@ -30,10 +33,6 @@ body{
         -ms-user-select: none; /* Internet Explorer/Edge */
             user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome, Edge, Opera and Firefox */
-}
-
-.resetBanner h1:active{
-    transform: translate(4px, 4px);
 }
 
 .links{ /* Container for YT And Twitter Divs */
@@ -53,7 +52,12 @@ body{
 }
 #invertButton{
     margin: 0px;
+    display: flexbox;
+    align-items:center;
     padding: 200px;
+}
+#invertButton:active{
+    transform: translate(4px, 4px);
 }
 
 .links a {
@@ -83,10 +87,10 @@ body{
 .links div:hover img{
     filter: brightness(0) saturate(100%) invert(100%) sepia(77%) saturate(120%) hue-rotate(186deg) brightness(109%) contrast(101%); 
 }
-.links .YT:hover img{
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+/* .links .YT:hover img{
+    -webkit-filter: grayscale(100%); 
     filter: grayscale(100%) invert(100%);
-}
+} */
 
 .links div:hover {
     /* box-shadow: 0px 4px rgb(66, 66, 66); */

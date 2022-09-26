@@ -35,5 +35,9 @@ function swapdstext(){
   }
 }
 
+function checkCB(){
+  invert();
+}
+
 
 
