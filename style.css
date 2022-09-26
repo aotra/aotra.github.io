@@ -36,17 +36,20 @@ body{
     transform: translate(4px, 4px);
 }
 
-.links{
+.links{ /* Container for YT And Twitter Divs */
     display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: 0.3s;
+    align-items: center;  /* align center vertically */
+    justify-content: center; /* align center horizontally */
+    transition: 0.3s; /* All transitions are 0.3s */
 }
-.links div{
+.links div{ /* Twitter and YT Divs */
     display: flex;
     align-items: center;
     justify-content: center;
     transition: 0.3s;
+    margin: 40px;  /* Spacing */
+    border-radius: 20px; /* rounding */
+    padding: 10px; /* internal padding */
 }
 #invertButton{
     margin: 0px;
@@ -54,26 +57,42 @@ body{
 }
 
 .links a {
-    padding: 50px;
+    justify-content: center;
+    align-items: center;
     list-style: none;
     overflow: hidden;
     color: black;
     font-family: pixel;
     text-align: center;
-    padding: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
     font-size: 30px;
     border-radius: 14px;
     list-style: none;
     display: inline-block;
     transition: 0.3s;
+    
 }
 .links img{
     display: inline-block;
     width: 80px;
-    padding-top: 15px;
+    padding-top: 10px;
+    transition: 0.3s;
 }
-.links a:hover {
-    text-shadow: 4px 4px rgb(66, 66, 66)
+.links div:hover a{
+    filter: brightness(0) saturate(100%) invert(100%) sepia(77%) saturate(120%) hue-rotate(186deg) brightness(109%) contrast(101%);
+}
+.links div:hover img{
+    filter: brightness(0) saturate(100%) invert(100%) sepia(77%) saturate(120%) hue-rotate(186deg) brightness(109%) contrast(101%); 
+}
+.links .YT:hover img{
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%) invert(100%);
+}
+
+.links div:hover {
+    /* box-shadow: 0px 4px rgb(66, 66, 66); */
+    background-color: rgb(241, 101, 160);
 }
 .links a:link { text-decoration: none; }
 .links a:visited { text-decoration: none; }
@@ -152,3 +171,17 @@ body{
       transform: translate3d(15%, 100%, 0);
     }
   }
+
+.snow-container2 {
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    top: 0;
+    overflow: hidden;
+    z-index: 0;
+    pointer-events: none;
+    background-color: transparent;
+    filter: brightness(0) saturate(100%) invert(84%) sepia(16%) saturate(862%) hue-rotate(294deg) brightness(102%) contrast(97%);
+}
+

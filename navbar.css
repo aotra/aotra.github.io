@@ -3,6 +3,7 @@
     list-style: none;
     overflow: hidden;
     background-color: whitesmoke;
+    z-index: 2;
     
 }
 .navBar img{
@@ -23,6 +24,8 @@
     list-style: none;
     margin-right: 60px;
     margin-left: 40px;
+    margin-top: 15px;
+    margin-bottom: 15px;
     display: inline-block;
     transition: 0.3s;
 }
