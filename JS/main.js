@@ -1,3 +1,5 @@
+dsNm = "aotra#8187"
+
 function invert() {
     let css = 'html {-webkit-filter: invert(100%);' +
       '-moz-filter: invert(100%);' + 
@@ -22,6 +24,15 @@ function invert() {
       style.appendChild(document.createTextNode(css))
     }
     head.appendChild(style)
+}
+
+function swapdstext(){
+  const a = document.getElementById("dstext")
+  if (a.innerHTML === "Discord") {
+    a.innerHTML = dsNm;
+  } else {
+    a.innerHTML = "Discord";
+  }
 }
 
 
