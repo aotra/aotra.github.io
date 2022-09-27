@@ -39,12 +39,11 @@ window.onload = function(){
           ctx.arc(f.x, f.y, f.r, 0, Math.PI*2, true);
         }
         ctx.fill();
-        moveFlakes();
+        moveFlakes(dangle);
       }
     
       //animate the flakes
-      var angle = 0;
-      function moveFlakes(){
+      function moveFlakes(angle){
         angle += 0.01;
         for(var i = 0; i < mf; i++)
         {

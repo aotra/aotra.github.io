@@ -1,4 +1,5 @@
 dsNm = "aotra#8187"
+var dangle = 0
 
 function invert() {
     let css = 'html {-webkit-filter: invert(100%);' +
@@ -10,10 +11,12 @@ function invert() {
   
     if (!window.counter) {
       window.counter = 1
+      dangle = 0
     } else {
       window.counter++
       if (window.counter % 2 == 0) {
         css ='html {-webkit-filter: invert(0%); -moz-filter: invert(0%); -o-filter: invert(0%); -ms-filter: invert(0%); }'
+        dangle = 0
       }
     }
   

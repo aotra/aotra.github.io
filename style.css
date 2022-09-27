@@ -8,7 +8,7 @@
 body{
     margin: 0;
     background-color: white;
-    overflow-x: hidden;
+    overflow-x:hidden;
 }
 .resetBanner{
     background-image: url("Images/bg1.png");
@@ -17,9 +17,12 @@ body{
 }
 #aotraCont{
     position: absolute;
-    height: 550px;
-    margin-left: 27%;
-    margin-right: 27%;
+    max-height: 550px;
+    height: auto;
+    justify-self: center;
+    justify-items: center;
+    justify-content: center;
+    width: 100%;
     z-index: 2;
 }
 .resetBanner h1{
@@ -44,25 +47,30 @@ body{
 }
 
 .links{ /* Container for YT And Twitter Divs */
-    display: flex;
-    align-items: center;  /* align center vertically */
-    justify-content: center; /* align center horizontally */
+    display:block;
+    width: fit-content;
     transition: 0.3s; /* All transitions are 0.3s */
+    margin: auto;
 }
 .links div{ /* Twitter and YT Divs */
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: inline-block;
     transition: 0.3s;
     margin: 40px;  /* Spacing */
+    justify-self: center;
+    justify-items: center;
+    justify-content: center;
     border-radius: 20px; /* rounding */
     padding: 10px; /* internal padding */
+    width:max-content;
 }
 #invertButton{
-    margin: 0px;
+    margin: auto;
     display: flex;
     align-items:center;
-    padding: 200px;
+    justify-self: center;
+    justify-items: center;
+    justify-content: center;
+    padding-top: 200px;
     text-align: center;
 }
 #invertButton:active{
@@ -89,6 +97,10 @@ body{
     display: inline-block;
     width: 80px;
     transition: 0.3s;
+    margin-bottom: 17px;
+}
+.links .Discord img{
+    margin-bottom: 8px;
 }
 .links div:hover a{
     filter: brightness(0) saturate(100%) invert(100%) sepia(77%) saturate(120%) hue-rotate(186deg) brightness(109%) contrast(101%);
