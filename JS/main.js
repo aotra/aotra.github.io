@@ -40,6 +40,18 @@ function swapdstext(){
   }
 }
 
+function copyDS(){
+  const a = document.getElementById("dstext")
+  navigator.clipboard.writeText(a.innerHTML);
+}
+
+window.addEventListener('load', (event) => {
+  a = document.getElementsByClassName("Discord")[0]
+  console.log(a)
+  a.addEventListener("mouseover", swapdstext());
+  a.addEventListener("mouseleave", swapdstext());
+});
+
 function checkCB(){
   invert();
 }
