@@ -139,15 +139,16 @@ body{
   visibility: hidden;
   font-size: 30px;
   color: rgb(36, 36, 36);
-  background-color: rgb(255, 255, 255);
-  border-radius: 8px;
-  
 }
 .links .Discord:active > h1{
   visibility:visible;
   position:fixed;
-  transition: 0.0s;
+  transition: ease 0.3s;
   transform: translateY(-30px);
+}
+
+.links .Instagram img{
+  margin-bottom: 8px;
 }
 
 
